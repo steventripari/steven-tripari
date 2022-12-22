@@ -1,0 +1,7 @@
+{
+    "name": "steven-tripari",
+    "version": "1.0.0",
+    "bin": {
+        "steven-tripari": "index.js"
+    }
+}
