@@ -23,5 +23,13 @@
         "user interface",
         "interface",
         "design"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "steventripari/steven-tripari",
+    "author": {
+        "name": "Steven Tripari",
+        "email": "07-bob.warble@icloud.com",
+        "url": "https://www.linkedin.com/in/stripari/"
+    }
 }
