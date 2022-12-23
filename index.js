@@ -1,12 +1,20 @@
 #!/usr/bin/env node
+const pkgJSON = require('./package.json');
+const welcome = require('cli-welcome');
 
-const clearConsole = require('clear-any-console');
-
-// Clears the console.
-clearConsole();
+welcome({
+	title: pkgJSON.name,
+	tagLine: `How's it goin'?`,
+	description: pkgJSON.description,
+    bgColor: `#FADC00`,
+	color: `#000000`,
+	bold: true,
+	clear: true,
+	version: pkgJSON.version,
+});
 
 console.log(`
-Steven Tripari - Whatup!
+Steven Tripari - Creative Problem Solver!
 
 Design Research Specialist at Macy's | The Webby Awards 2022 Official Honoree - 95th Macy's Thanksgiving Day Parade NFTs | Building Web3.0 | User Experience Evangelist | n00b Developer
 
