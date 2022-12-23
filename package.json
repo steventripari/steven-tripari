@@ -1,6 +1,6 @@
 {
     "name": "steven-tripari",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Get to know Steven via `npx steven-tripari`.",
     "bin": {
         "steven-tripari": "index.js"
