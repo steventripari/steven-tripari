@@ -2,13 +2,15 @@
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
 const chalk = require('chalk'); //chalk 5 in ESM, using chalk 4.0
+const alert = require('cli-alerts-stripari');
+const checkNode = require('cli-check-node');
+
 const log = console.log;
 const dim = chalk.dim;
 const italic = chalk.italic;
 const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
 const githubClr = chalk.hex(`#6cc644`).bold.inverse;
 const linkedinClr = chalk.hex(`#0077b5`).bold.inverse;
-const alert = require('cli-alerts-stripari');
 
 welcome({
 	title: `Steven Tripari`,
@@ -20,6 +22,8 @@ welcome({
 	clear: true,
 	version: pkgJSON.version,
 });
+
+checkNode('11', { fail: false });
 
 log(`${italic(
     `Design Research Specialist at Macy's | The Webby Awards 2022 Official Honoree - 95th Macy's Thanksgiving Day Parade NFTs | Building Web3.0 | User Experience Evangelist | n00b Developer`
