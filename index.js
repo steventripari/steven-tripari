@@ -5,9 +5,10 @@ const chalk = require('chalk'); //chalk 5 in ESM, using chalk 4.0
 const log = console.log;
 const dim = chalk.dim;
 const italic = chalk.italic;
-const twitterClr = chalk.hex(`#1da1f2`).bold.inverse
-const githubClr = chalk.hex(`#6cc644`).bold.inverse
-const linkedinClr = chalk.hex(`#0077b5`).bold.inverse
+const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
+const githubClr = chalk.hex(`#6cc644`).bold.inverse;
+const linkedinClr = chalk.hex(`#0077b5`).bold.inverse;
+const alert = require('cli-alerts-stripari');
 
 welcome({
 	title: `Steven Tripari`,
@@ -28,4 +29,4 @@ log(`${italic(
 📖 ${githubClr(` GitHub `)}:     ${dim(`https://github.com/steventripari`)} 
 💼 ${linkedinClr(` LinkedIn `)}:   ${dim(`https://www.linkedin.com/in/stripari/`)} 
 `);
-
+alert({ type: 'info', msg: `This line comes from my second node module!`});
