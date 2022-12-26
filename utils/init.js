@@ -4,19 +4,23 @@ const unhandled = require('cli-handle-unhandled');
 
 const pkgJSON = require('./../package.json');
 
-module.exports = () => {
+module.exports = (minimal, clear) => {
     unhandled();
 
-    welcome({
-        title: `Steven Tripari`,
-        tagLine: `gm! We're all gonna make it.'`,
-        description: pkgJSON.description,
-        bgColor: `#FADC00`,
-        color: `#000000`,
-        bold: true,
-        clear: true,
-        version: pkgJSON.version,
-    });
+    !minimal && 
+        welcome({
+            title: `Steven Tripari`,
+            tagLine: `gm! We're all gonna make it.'`,
+            description: pkgJSON.description,
+            version: pkgJSON.version,
+            bgColor: `#FADC00`,
+            color: `#000000`,
+            bold: true,
+            clear,
+        });
+
+    minimal && console.log(`Steven Tripari`);
+        
 
     checkNode('10', { fail: false });
 };
