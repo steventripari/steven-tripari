@@ -15,10 +15,15 @@ const social = `
 💼 ${linkedinClr(` LinkedIn `)}:   ${dim(`https://www.linkedin.com/in/stripari/`)} 
 `;
 
-const ad = `Check out the nodecli.com course I used to create this.`;
+const ad = `Check out the course I used to create this CLI, taught by Ahmad Awais on nodecli.com.`;
+const blogName = ` Awais.dev `;
+const blog = `latest posts`;
+
 
 module.exports ={
     bio,
     social,
     ad,
+    blogName,
+    blog,
 };

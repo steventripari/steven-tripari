@@ -6,13 +6,19 @@
         "steven-tripari": "index.js"
     },
     "dependencies": {
+        "await-to-js": "^3.0.0",
+        "axios": "^0.21.4",
+        "boxen": "^4.2.0",
         "chalk": "^4.0.0",
         "cli-alerts-stripari": "^1.0.2",
         "cli-check-node": "^1.3.4",
         "cli-handle-error": "^4.4.0",
         "cli-handle-unhandled": "^1.1.1",
+        "cli-strip-html": "^1.0.2",
         "cli-welcome": "^2.2.2",
-        "meow": "^7.0.1"
+        "enquirer": "^2.3.6",
+        "meow": "^7.0.1",
+        "ora": "^5.3.0"
     },
     "keywords": [
         "steven tripari",
