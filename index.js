@@ -18,18 +18,7 @@ const flags = cli.flags;
 	// Init and help
 	init(flags.minimal, flags.clear);
 	input.includes('help') && cli.showHelp(0);
-/*	
-	const prompt = new Toggle({
-		message: 'Tell us about your class?',
-		enabled: '2020',
-		disabled: '2021',
-	  });
-
-	const response = await prompt.run();
-
-	console.log(`response`, response);
-*/
-
+	
 	//Print out the info
 	flags.ad && alert({ type: 'info', msg: data.ad });
 	flags.bio && console.log(data.bio);
@@ -37,9 +26,7 @@ const flags = cli.flags;
 	flags.posts && alert({ type: 'info', msg: data.blog, name: data.blogName });
 	flags.posts && (await posts());
 	
-
 	//debug info if needed
 	debug(flags.debug, cli);
-	
-})();
 
+})();
